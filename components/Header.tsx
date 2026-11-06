@@ -22,6 +22,12 @@ export function Header() {
         </Link>
 
         <nav className="flex items-center space-x-3 sm:space-x-4">
+          <Link
+            href="/test"
+            className="text-xs sm:text-sm font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 px-2.5 py-1 rounded transition-colors"
+          >
+            Test Tab
+          </Link>
           {user ? (
             <>
               <Link
