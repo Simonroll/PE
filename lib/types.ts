@@ -1,11 +1,13 @@
-export type Category = 'Food' | 'Transport' | 'Shopping' | 'Bills' | 'Other';
+export type BookStatus = "To Read" | "Reading" | "Finished";
 
-export interface Expense {
+export const STATUSES: BookStatus[] = ["To Read", "Reading", "Finished"];
+
+export interface Book {
   id: string;
   user_id: string;
-  amount: number;
-  category: Category;
-  spent_on: string;
-  note: string;
+  title: string;
+  author: string;
+  pages: number;
+  status: BookStatus;
   created_at: string;
 }

@@ -26,7 +26,6 @@ export default function LoginPage() {
     if (!trimmed) {
       return "Email is required";
     }
-    // Check valid email format
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(trimmed)) {
       return "Please enter a valid email address";
@@ -82,7 +81,7 @@ export default function LoginPage() {
       if (error) {
         setErrorAuth(error.message);
       } else {
-        router.push("/expenses");
+        router.push("/books");
       }
     } catch (err: unknown) {
       setErrorAuth(err instanceof Error ? err.message : "Failed to sign in");
@@ -95,8 +94,8 @@ export default function LoginPage() {
     <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center p-4">
       <Card className="w-full max-w-md shadow-lg border-gray-200">
         <CardHeader className="space-y-1 text-center">
-          <CardTitle className="text-2xl font-bold">Login to SpendWise</CardTitle>
-          <CardDescription>Enter your email and password to access your expenses</CardDescription>
+          <CardTitle className="text-2xl font-bold">Login to ShelfLife</CardTitle>
+          <CardDescription>Enter your email and password to open your bookshelf</CardDescription>
         </CardHeader>
         <CardContent>
           <form

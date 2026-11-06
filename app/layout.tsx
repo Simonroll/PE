@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/contexts/AuthContext";
-import { ExpensesProvider } from "@/contexts/ExpensesContext";
+import { BooksProvider } from "@/contexts/BooksContext";
 import { Header } from "@/components/Header";
 
 const geistSans = Geist({
@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "blank",
-  description: "Web Application",
+  title: "ShelfLife",
+  description: "Keep track of the books on your shelf",
 };
 
 export default function RootLayout({
@@ -32,10 +32,10 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
         <AuthProvider>
-          <ExpensesProvider>
+          <BooksProvider>
             <Header />
             <main className="flex-1">{children}</main>
-          </ExpensesProvider>
+          </BooksProvider>
         </AuthProvider>
       </body>
     </html>

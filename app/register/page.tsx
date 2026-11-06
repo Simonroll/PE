@@ -121,8 +121,8 @@ export default function RegisterPage() {
     <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center p-4">
       <Card className="w-full max-w-md shadow-lg border-gray-200">
         <CardHeader className="space-y-1 text-center">
-          <CardTitle className="text-2xl font-bold">Register for SpendWise</CardTitle>
-          <CardDescription>Create a personal account to start recording expenses</CardDescription>
+          <CardTitle className="text-2xl font-bold">Register for ShelfLife</CardTitle>
+          <CardDescription>Create an account to start building your bookshelf</CardDescription>
         </CardHeader>
         <CardContent>
           <form
