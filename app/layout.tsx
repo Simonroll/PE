@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SpendWise - Personal Expense Tracker",
-  description: "Track your spending effortlessly and see where your money goes.",
+  title: "blank",
+  description: "Web Application",
 };
 
 export default function RootLayout({

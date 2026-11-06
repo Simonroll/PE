@@ -18,16 +18,10 @@ export function Header() {
     <header className="bg-white border-b border-gray-200 sticky top-0 z-30 shadow-sm">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-7xl">
         <Link href="/" className="text-xl font-bold tracking-tight text-gray-900 hover:text-primary transition-colors">
-          SpendWise
+          blank
         </Link>
 
         <nav className="flex items-center space-x-3 sm:space-x-4">
-          <Link
-            href="/test"
-            className="text-xs sm:text-sm font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 px-2.5 py-1 rounded transition-colors"
-          >
-            Test Tab
-          </Link>
           {user ? (
             <>
               <Link
